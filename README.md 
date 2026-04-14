@@ -1,27 +1,21 @@
-# Team Knowledge Base Q&A System
+# Team Knowledge Base Q&A
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![CI](https://github.com/YOUR_USERNAME/team-knowledge-qa/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/team-knowledge-qa/actions/workflows/ci.yml)
+[![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)](https://www.docker.com/)
 
-Upload your team's internal documents (PDF/TXT) and ask natural language questions. The system retrieves relevant chunks and uses an LLM (Groq) to generate accurate, grounded answers.
+A production‑ready RAG (Retrieval‑Augmented Generation) system that answers questions **only from your uploaded documents** – no hallucinations.
+Built with FastAPI, ChromaDB, Groq, and Streamlit.
 
 ## Features
-- Upload multiple PDF/TXT documents
-- Ask questions in plain English
-- Answers are based **only** on your documents, no hallucinations
+
+- Upload PDF or TXT documents
+- Ask natural language questions
+- Answers are grounded **only** in your documents – the LLM refuses if the answer isn't there
 - Shows which source documents were used
-- Full containerized stack (Docker Compose)
-- Free to use locally or deploy to cloud
+- Full containerisation with Docker Compose
+- REST API (FastAPI) + clean UI (Streamlit)
+- CI pipeline with GitHub Actions
 
-## Quick Start (Local)
-1. Clone the repo
-2. Create a `.env` file from `.env` and add your [Groq API key](https://console.groq.com)
-3. Run `docker-compose up --build`
-4. Open http://localhost:8501 in your browser
+## Quick Start
 
-## Deployment
-- Backend: can be deployed to Render, Fly.io, or AWS
-- Frontend: can be deployed to Streamlit Community Cloud or Hugging Face Spaces
-- See `doc.md` for detailed architecture and learning guide
-
-## Tech Stack
-- Backend: FastAPI + ChromaDB + SentenceTransformers + Groq
-- Frontend: Streamlit
-- Deployment: Docker + GitHub Actions (CI)
+### Project structure
