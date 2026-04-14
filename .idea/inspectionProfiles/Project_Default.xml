@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="streamlit" />
+          <option value="matplotlib" />
+          <option value="extra-streamlit-components" />
+          <option value="requests" />
+          <option value="PyJWT" />
+          <option value="opencv-python-headless" />
+          <option value="ultralytics" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

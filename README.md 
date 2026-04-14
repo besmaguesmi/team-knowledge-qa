@@ -1,0 +1,27 @@
+# Team Knowledge Base Q&A System
+
+Upload your team's internal documents (PDF/TXT) and ask natural language questions. The system retrieves relevant chunks and uses an LLM (Groq) to generate accurate, grounded answers.
+
+## Features
+- Upload multiple PDF/TXT documents
+- Ask questions in plain English
+- Answers are based **only** on your documents, no hallucinations
+- Shows which source documents were used
+- Full containerized stack (Docker Compose)
+- Free to use locally or deploy to cloud
+
+## Quick Start (Local)
+1. Clone the repo
+2. Create a `.env` file from `.env` and add your [Groq API key](https://console.groq.com)
+3. Run `docker-compose up --build`
+4. Open http://localhost:8501 in your browser
+
+## Deployment
+- Backend: can be deployed to Render, Fly.io, or AWS
+- Frontend: can be deployed to Streamlit Community Cloud or Hugging Face Spaces
+- See `doc.md` for detailed architecture and learning guide
+
+## Tech Stack
+- Backend: FastAPI + ChromaDB + SentenceTransformers + Groq
+- Frontend: Streamlit
+- Deployment: Docker + GitHub Actions (CI)
