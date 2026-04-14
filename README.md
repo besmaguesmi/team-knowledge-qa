@@ -65,7 +65,7 @@ cp .env.example .env   # add GROQ_API_KEY
 uvicorn app.main:app --reload --port 8000
 ```
 
-### Frontend (in a new terminal)
+#### Frontend (in a new terminal)
 ```
 cd frontend
 python -m venv venv
@@ -75,7 +75,7 @@ export BACKEND_URL=http://localhost:8000   # or set in .env
 streamlit run streamlit_app.py
 ```
 
-### Run tests
+#### Run tests
 ```
 pip install pytest
 pytest tests/
