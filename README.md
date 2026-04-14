@@ -1,6 +1,6 @@
 # Team Knowledge Base Q&A
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
-[![CI](https://github.com/YOUR_USERNAME/team-knowledge-qa/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/team-knowledge-qa/actions/workflows/ci.yml)
+[![CI](https://github.com/besmaguesmi/team-knowledge-qa/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/team-knowledge-qa/actions/workflows/ci.yml)
 [![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)](https://www.docker.com/)
 
 A production‑ready RAG (Retrieval‑Augmented Generation) system that answers questions **only from your uploaded documents** – no hallucinations.
